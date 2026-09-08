@@ -1,0 +1,13 @@
+services:
+  openclaw:
+    build:
+      context: .
+    container_name: openclaw
+    ports:
+      - "18789:18789"
+    volumes:
+      - openclaw-data:/home/openclaw-user/.openclaw
+    restart: unless-stopped
+
+volumes:
+  openclaw-data:
