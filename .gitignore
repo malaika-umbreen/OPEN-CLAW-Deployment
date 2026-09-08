@@ -1,0 +1,43 @@
+# ==========================
+# HOME SOC LAB — .gitignore
+# ==========================
+
+# API Keys and Secrets — NEVER commit these
+*.env
+.env
+.env.*
+openclaw.json
+*.key
+*.token
+*.secret
+secrets/
+credentials/
+
+# OpenClaw runtime files
+*.openclaw.json.bak
+sessions/
+agents/*/sessions/
+memory/
+
+# Docker
+.docker/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Backup files
+*.bak
+*.backup
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
